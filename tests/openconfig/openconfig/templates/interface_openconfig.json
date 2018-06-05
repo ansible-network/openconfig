@@ -1,0 +1,33 @@
+{
+    "interfaces": [
+     {
+        "interface": {
+            "name" : "{{ interface1_name }}",
+            "config" : {
+                "name" : "{{ interface1_name }}",
+                "enabled": "true",
+                "type": "ethernetCsmacd"
+            },
+            "subinterfaces": {
+                "subinterface" : [
+                {
+                    "index" : {{ interface1_subinterface1_index }},
+                    "ipv4" : {
+                        "address" : [
+                        {
+                            "ip": "{{ interface1_sub1_ip }}",
+                            "config": {
+                                "ip" : "{{ interface1_sub1_ip }}",
+                                "prefix-length" : {{ interface1_sub1_mask }}
+                            }
+                        }
+                        ]
+                    }
+                }
+               ]
+            }
+        }
+     }
+     ]
+}
+     

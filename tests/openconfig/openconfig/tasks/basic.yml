@@ -1,0 +1,18 @@
+---
+- name:  Parse interface config in openconfig data model and write into xml for netconf
+  openconfig_parser:
+      src: 'interface_openconfig.json'
+      ns_map: 'openconfig_ns_map.yml'
+      output: '{{ role_path}}/templates/interface_openconfig.xml'
+  register: result
+
+- name: Play config via netconf to IosXr who understands openconfig model
+  netconf_config:
+      src: 'interface_openconfig.xml'
+  register: result
+  tags: iosxr_play
+
+- assert: &true
+    that:
+      - 'result.changed == true'
+
