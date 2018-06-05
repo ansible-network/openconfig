@@ -1,9 +1,9 @@
 from __future__ import (absolute_import, division, print_function)
 
 import json
-from schema_transform.openconfig_nsmap_def import OPENCONFIG_NS_MAP 
+from openconfig.schema_transform.openconfig_nsmap_def import OPENCONFIG_NS_MAP 
 from collections import OrderedDict
-from schema_transform.base_openconfig_xpath_transform import base_openconfig_xpath_map_transform_fn
+from openconfig.schema_transform.base_openconfig_xpath_transform import base_openconfig_xpath_map_transform_fn
 import q
 
 try:

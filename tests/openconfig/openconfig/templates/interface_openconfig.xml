@@ -1,0 +1,26 @@
+<config>
+  <interfaces xmlns="http://openconfig.net/yang/interfaces">
+    <interface>
+      <name>GigabitEthernet0/0/0/2</name>
+      <config>
+        <name>GigabitEthernet0/0/0/2</name>
+        <enabled>true</enabled>
+        <type xmlns:idx="urn:ietf:params:xml:ns:yang:iana-if-type">idx:ethernetCsmacd</type>
+      </config>
+      <subinterfaces>
+        <subinterface>
+          <index>0</index>
+          <ipv4 xmlns="http://openconfig.net/yang/interfaces/ip">
+            <address>
+              <ip>11.19.3.1</ip>
+              <config>
+                <ip>11.19.3.1</ip>
+                <prefix-length>24</prefix-length>
+              </config>
+            </address>
+          </ipv4>
+        </subinterface>
+      </subinterfaces>
+    </interface>
+  </interfaces>
+</config>

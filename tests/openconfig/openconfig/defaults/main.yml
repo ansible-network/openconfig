@@ -1,0 +1,5 @@
+---
+interface1_name                      : "GigabitEthernet0/0/0/2"
+interface1_subinterface1_index       : 0
+interface1_sub1_ip                   : "11.19.3.1"
+interface1_sub1_mask                 : 24

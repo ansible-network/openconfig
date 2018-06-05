@@ -1,6 +1,6 @@
 from __future__ import (absolute_import, division, print_function)
 
-from schema_transform.base_netconf_transform import SchemaTransformNetconfBase
+from openconfig.schema_transform.base_netconf_transform import SchemaTransformNetconfBase
 
 try:
     from lxml import etree
