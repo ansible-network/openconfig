@@ -1,3 +1,4 @@
 ---
  - name: openconfig test
-   import_tasks: basic.yml
+#  import_tasks: basic.yml
+   import_tasks: openconfig_config.yml

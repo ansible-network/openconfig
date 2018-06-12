@@ -24,6 +24,7 @@ from ansible.module_utils.six.moves.urllib.parse import urlsplit
 from collections import OrderedDict
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), os.path.pardir, 'lib'))
+q(sys.path)
 from openconfig.schema_transform.base_netconf_transform  import SchemaTransformNetconfBase
 from openconfig.schema_transform.iosxr_netconf_transform import IosxrSchemaTransformNetconf
 from openconfig.schema_transform.junos_netconf_transform import JunosSchemaTransformNetconf

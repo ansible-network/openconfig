@@ -3,7 +3,7 @@
   openconfig_parser:
       src: 'interface_openconfig.json'
       ns_map: 'openconfig_ns_map.yml'
-      output: '{{ role_path}}/templates/interface_openconfig.xml'
+      output: '{{ role_path }}/templates/interface_openconfig.xml'
   register: result
 
 - name: Play config via netconf to IosXr who understands openconfig model

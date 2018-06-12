@@ -1,0 +1,13 @@
+---
+ - name: get openconfig from device
+   openconfig_config:
+      schema:
+         - openconfig-interfaces
+      data:
+         interfaces:
+             interface:
+             - name : 'GigabitEthernet 0/0/0/0'
+               enabled : True
+   register: result
+   tags: config
+
